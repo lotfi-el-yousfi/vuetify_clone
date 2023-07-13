@@ -17,14 +17,14 @@ import { createRouter, createWebHistory } from 'vue-router'
     path: '/allComponents',
     name: "AllComponenets" ,
     component: () => import('@/views/AllComponenets.vue'),
-    children: [
-      {
-        path: '',
-        name: 'Home',
+    // children: [
+    //   {
+    //     path: '',
+    //     name: 'Home',
        
-        component: () => import('@/views/AllComponenets.vue'),
-      },
-    ],
+    //     component: () => import('@/views/AllComponenets.vue'),
+    //   },
+    // ],
   },
 ]
 

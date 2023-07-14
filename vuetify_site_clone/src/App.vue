@@ -1,10 +1,12 @@
 <template>
-  <v-app>
-    <v-main>
-     <h1>this is app.vue </h1>
-    </v-main>
-  </v-app>
+  
+  <Navigation></Navigation>
+
+  <MyDrawer></MyDrawer>
+  <router-view></router-view>
 </template>
 
 <script setup lang="ts">
-  </script>
+import MyDrawer from "@/views/Drawer/Drawer.vue";
+import Navigation from "@/views/navbar/navigation.vue";
+</script>

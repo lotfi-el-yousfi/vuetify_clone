@@ -12,23 +12,14 @@ import { createRouter, createWebHistory } from 'vue-router'
       },
     ],
   },
-  {
-    path: '/test',
-    name: 'test',
-    component: () => import('@/views/test.vue'),
-  },
+   
   {
     path: '/AllComponenets',
     name:"AllComponenets",
     component: () => import('@/views/AllComponenets.vue'),
      
   },
-  {
-    path: '/test_compo',
-    name:"test_compo",
-    component: () => import('@/views/test_compo.vue'),
-     
-  },
+   
    
 ]
 

@@ -1,29 +1,22 @@
 <template>
-  <v-card  >
+  <v-card>
     <v-layout>
       <v-navigation-drawer
         v-model="drawer"
-        :rail="rail"
+        :rail="false"
         permanent
-        @click="rail = false"
+        style="height: 100%"
       >
-        <v-list density="compact" nav>
-          <v-list-item
-           
-             
-            prepend-icon="mdi-Atom"
-            title="item.title"
-            value="item.value"
-          ></v-list-item>
-        </v-list>
-        <v-list density="compact" nav>
+        <v-list nav>
           <v-list-item
             v-for="item in compo_list"
             :key="item.id"
             :prepend-icon="item.prepend_icon"
             :title="item.title"
             :value="item.value"
-          ></v-list-item>
+            @click="handelClick"
+          >
+        </v-list-item>
         </v-list>
       </v-navigation-drawer>
     </v-layout>
@@ -4130,6 +4123,11 @@ export default {
         },
       ],
     };
+  },
+  methods: {
+    handelClick() {
+      console.log("clicked");
+    },
   },
 };
 </script>

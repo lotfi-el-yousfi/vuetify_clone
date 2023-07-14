@@ -1,7 +1,5 @@
 <template>
-  
   <Navigation></Navigation>
-
   <MyDrawer></MyDrawer>
   <router-view></router-view>
 </template>
